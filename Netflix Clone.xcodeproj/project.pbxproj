@@ -24,6 +24,8 @@
 		53AF31E3299656C1006C59EB /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF31E2299656C1006C59EB /* UpcomingViewController.swift */; };
 		53AF31E5299656DD006C59EB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF31E4299656DD006C59EB /* SearchViewController.swift */; };
 		53AF31E7299656FC006C59EB /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF31E6299656FC006C59EB /* DownloadsViewController.swift */; };
+		A78AA7432999875A00EEA3B2 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78AA7422999875A00EEA3B2 /* TitleTableViewCell.swift */; };
+		A78AA745299989A200EEA3B2 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78AA744299989A200EEA3B2 /* TitleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		53AF31E2299656C1006C59EB /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		53AF31E4299656DD006C59EB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		53AF31E6299656FC006C59EB /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		A78AA7422999875A00EEA3B2 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		A78AA744299989A200EEA3B2 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TitleViewModel.swift; path = "Netflix Clone/Views/TitleViewModel.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 				53AB965229965ED40055BF87 /* CollectionViewTableViewCell.swift */,
 				53AB965729966B3A0055BF87 /* HeroHeaderUIView.swift */,
 				534127532998345200E92270 /* TitleCollectionViewCell.swift */,
+				A78AA7422999875A00EEA3B2 /* TitleTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -72,6 +77,7 @@
 		53AB964E29965E7C0055BF87 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A78AA744299989A200EEA3B2 /* TitleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78AA7432999875A00EEA3B2 /* TitleTableViewCell.swift in Sources */,
 				53AF31E5299656DD006C59EB /* SearchViewController.swift in Sources */,
 				534127542998345200E92270 /* TitleCollectionViewCell.swift in Sources */,
 				53AF31D029965558006C59EB /* MainTabBarViewController.swift in Sources */,
@@ -236,6 +243,7 @@
 				53AF31E3299656C1006C59EB /* UpcomingViewController.swift in Sources */,
 				534E0B782996E7ED004C73F2 /* Title.swift in Sources */,
 				53AF31E1299656A5006C59EB /* HomeViewController.swift in Sources */,
+				A78AA745299989A200EEA3B2 /* TitleViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +382,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YPCM4C557U;
+				DEVELOPMENT_TEAM = U6MH9K55GC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Netflix Clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -401,7 +409,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YPCM4C557U;
+				DEVELOPMENT_TEAM = U6MH9K55GC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Netflix Clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
