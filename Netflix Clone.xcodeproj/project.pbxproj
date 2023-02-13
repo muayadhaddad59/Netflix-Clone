@@ -142,11 +142,8 @@
 		53AF31DF29965678006C59EB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				53AF31E0299656A5006C59EB /* HomeViewController.swift */,
-				53AF31E2299656C1006C59EB /* UpcomingViewController.swift */,
-				53AF31E4299656DD006C59EB /* SearchViewController.swift */,
-				53AF31E6299656FC006C59EB /* DownloadsViewController.swift */,
-				53EAB23B299AC8D900703EC6 /* SearchResultViewController.swift */,
+				53EAB23D299AC91600703EC6 /* Core */,
+				53EAB23E299AC92200703EC6 /* General */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -161,6 +158,25 @@
 				53AF31D929965559006C59EB /* Info.plist */,
 			);
 			name = Files;
+			sourceTree = "<group>";
+		};
+		53EAB23D299AC91600703EC6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				53AF31E0299656A5006C59EB /* HomeViewController.swift */,
+				53AF31E2299656C1006C59EB /* UpcomingViewController.swift */,
+				53AF31E4299656DD006C59EB /* SearchViewController.swift */,
+				53AF31E6299656FC006C59EB /* DownloadsViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		53EAB23E299AC92200703EC6 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				53EAB23B299AC8D900703EC6 /* SearchResultViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
