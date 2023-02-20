@@ -51,7 +51,7 @@ extension SearchResultViewController: UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TitleCollectionViewCell.reuseID, for: indexPath) as? TitleCollectionViewCell else{return UICollectionViewCell()}
         
-        cell.configure(with: titles[indexPath.row].poster_path ?? "/xHlb7Vb7v50zWKLi8VihhIOHQEr.jpg")
+        cell.configure(with: titles[indexPath.row].poster_path ?? "/xHlb7Vb7v50zWKLi8VihhIOHQEr.jpg ")
         return cell
     }
     

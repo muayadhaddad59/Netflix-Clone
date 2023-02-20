@@ -13,7 +13,7 @@ class UpcomingViewController: UIViewController {
     
     private let upcomingTable : UITableView = {
         let table = UITableView()
-//        table.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
+        //        table.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
         
         table.register(TitleTableViewCell.self, forCellReuseIdentifier: TitleTableViewCell.reuseID)
         return table
@@ -73,4 +73,15 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource{
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let title = titles[indexPath.row]
+        
+        guard let titleName = title.original_title ?? title.original_name else {
+            return
+        }
+        
+        
+    }
 }

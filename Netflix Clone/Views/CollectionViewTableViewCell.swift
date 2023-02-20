@@ -7,11 +7,20 @@
 
 import UIKit
 
+protocol CollectionViewTableViewCellDelegate: AnyObject {
+    func CollectionViewTableViewCellDidTabCell(_ cell: CollectionViewTableViewCell, viewModel: TitlePreviewViewModel)
+}
+
 class CollectionViewTableViewCell: UITableViewCell {
     
     private var titles: [Title] = [Title]()
 
+    
+    
     static let identifier = "CollectionViewTableViewCell"
+    
+    weak var delegate: CollectionViewTableViewCellDelegate?
+    
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 140, height: 200)
@@ -59,6 +68,16 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
         return cell
         
     }
-    
+    // didSelected Item
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let title = titles[indexPath.row]
+//        guard let tileName = title.original_title ?? title.original_title else{ return }
+        
+        
+
+        let viewModel = TitlePreviewViewModel(title: "" , titleOverView: "Hi Muatad")
+        delegate?.CollectionViewTableViewCellDidTabCell(self, viewModel: viewModel)
+    }
     
 }
